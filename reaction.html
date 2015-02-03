@@ -1,0 +1,272 @@
+<!doctype html> <html>
+    <head>
+        <title>Coming Soon</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+
+        <style type="text/css">
+
+        #bg{
+          background-color:#383838;
+        }
+
+        #container{
+          width: 900px;
+          height: 900px;
+          margin: 0 auto;
+
+        }
+
+        #screen{
+          width:900px;
+          height:600px;
+           margin: 0 auto;
+          background-color: rgba(255,255,255,.9);
+          position: relative;
+          clear:both;
+        }
+
+        #info{
+         
+          position: relative;
+          width:600px;
+          float:left;
+          font-size: .6em;
+          margin-top: 10px;
+
+        }
+
+        #reset{
+          float:right;
+          
+          position: relative;
+          width: 130px;
+          height: 130px;
+          border-radius: 100%;
+          background-color: transparent;
+          border-style: none;
+          border: 3px solid white;
+          color: white;
+          margin: 30px 0 30px 0px;
+           font-family: 'Lato', sans-serif;
+           font-weight: normal;
+           text-transform: uppercase;
+           font-size: 1em;
+
+        }
+
+        h1, h2, h3{
+          font-family: 'Lato', sans-serif;
+          color:white;
+          text-transform: uppercase;
+        }
+      
+
+        #shape1{
+        width: 80px;
+         height: 80px;
+         background-color: rgb(255,255,255);
+         border: 2px solid rgba(0, 0, 0, 0.1);
+         display: none;
+         position: relative;
+        }
+        
+        #timer{
+          border-top: 2px solid white ;
+          border-bottom: 2px solid white;
+          width:130px;
+          padding: 10px 0 10px 0;
+          font-weight: normal;
+          font-size: 2em;
+        ;
+
+        }
+        .normal{
+          font-weight: normal;
+        }
+       
+
+
+
+
+        </style>
+</head>
+<body id="bg">
+
+  
+  <div id ="container">
+
+  <audio src="sounds/09 Skidozer 301.mp3" id="sound1"></audio>
+  <audio src="sounds/04 Death By Drowning.mp3" id="sound2"></audio>
+  <audio src="sounds/07 Mimi.mp3" id="sound3"></audio>
+ 
+
+    <div id ="info">
+      <h1>WEBSITE COMING SOON</h1>
+      <h3 class="normal"> IN THE MEANTIME PLAY THIS JS GAME I MADE</h2>
+        <h3 class="normal">CLICK ON SHAPES AS FAST AS YOU CAN!</h1>
+        <h1 id="slow">GET INTO THE GROOVE</h1>
+        <h2 id="timer">TIME = <span id="time">0.0000</span></h2>
+        
+      
+    </div>
+    <input type="button" value="Reset" id="reset">
+        
+    <div id="screen">
+    
+
+    <div id="shape1" class=""></div>
+
+    </div>
+ 
+  </div>
+      
+
+        <script type="text/javascript">
+
+
+                  var clickedTime;
+
+                  var createdTime;
+
+                  var reactionTime;
+
+
+
+                       function makeShape() {
+
+
+
+
+
+                           
+                                 var time=Math.random()*3000;
+
+                    
+
+                                  setTimeout(function(){
+
+                                      if (Math.random()>0.5) {
+                                           document.getElementById("shape1").style.borderRadius="100%";
+                                      }else{
+                                         document.getElementById("shape1").style.borderRadius="0";
+                                      }
+
+                                          function getRandomColor() {
+                                        var r = function(){
+                                        return Math.floor(Math.random()*255) 
+                                        };
+
+                                        return 'rgb(' + r() + "," + r() + "," + r() + ')';
+
+                                      }
+                                  
+
+                                  
+
+                                    document.getElementById("shape1").style.top = String(Math.floor(Math.random()*500)) + "px";
+
+                                    document.getElementById("shape1").style.left = String(Math.floor(Math.random()*800)) + "px";
+
+                                  var width = document.getElementById("shape1").style.width = String(Math.floor(Math.random()*80)+15) + "px";
+
+                                  document.getElementById("shape1").style.height = width;
+
+                                    document.getElementById("shape1").style.backgroundColor=getRandomColor();
+                                     document.getElementById("bg").style.backgroundColor=getRandomColor();
+                                    
+                                    document.getElementById("shape1").style.display="block";
+
+                                    createdTime=Date.now();
+
+
+                                }, time);
+
+                            }
+
+
+                  document.getElementById("shape1").onclick=function(){
+
+                    clickedTime=Date.now();
+
+                    reactionTime=(clickedTime - createdTime)/1000;
+
+                     document.getElementById("time").innerHTML=reactionTime;
+
+                     
+                   /*  var audio1 = document.getElementById('sound1');
+                      var audio2 = document.getElementById('sound2');
+                      var audio3 = document.getElementById('sound3');
+
+
+
+                      */
+
+                    
+
+              
+
+            if (reactionTime >= 1.25){
+                    document.getElementById("slow").innerHTML="WAY TOO SLOW!!";
+                      document.getElementById("sound1").currentTime = 0;
+                        document.getElementById("sound1").play();
+                        document.getElementById("sound2").pause();
+                        sound2.currentTime = 0;
+                        document.getElementById("sound3").pause();
+                        sound3.currentTime = 0;
+                  
+                      
+                     }else if(reactionTime > .9 && reactionTime<1.25){
+                      document.getElementById("slow").innerHTML="UP THE TEMPO!!";
+                      document.getElementById("sound2").currentTime = 0;
+                      document.getElementById("sound2").play();
+
+                      document.getElementById("sound1").pause();
+                      sound1.currentTime = 0;
+                        document.getElementById("sound3").pause();
+                        sound3.currentTime = 0;
+
+                     
+                     }else{
+                      document.getElementById("slow").innerHTML="NOW WE'RE GROOVIN!!";
+                      document.getElementById("sound3").currentTime = 0;
+                      document.getElementById("sound3").play();
+                      document.getElementById("sound1").pause();
+                      sound1.currentTime = 0;
+                        document.getElementById("sound2").pause();
+                        sound2.currentTime = 0;
+
+
+               
+                    
+        
+
+                     }
+
+
+
+                    this.style.display="none";
+
+
+                  
+
+
+                    makeShape();
+                  }
+
+                    
+
+           makeShape();
+
+           document.getElementById('reset').onclick=function()
+    {
+      window.location.reload();// window refresh for new game to start, so all variables become default.
+    }
+    
+</script>
+</body>
+</html>

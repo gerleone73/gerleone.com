@@ -1,0 +1,1013 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+
+/* FONT FACES
+--------------------------------------------- */
+
+
+
+@font-face {
+    font-family: 'futura_oblique';
+    src: url('futura_oblique-webfont.eot');
+    src: url('futura_oblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('futura_oblique-webfont.woff') format('woff'),
+         url('futura_oblique-webfont.ttf') format('truetype'),
+         url('futura_oblique-webfont.svg#futura_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('BebasNeue-webfont.eot');
+    src: url('BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BebasNeue-webfont.woff') format('woff'),
+         url('BebasNeue-webfont.ttf') format('truetype'),
+         url('BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'bauhaus_md_btbold';
+    src: url('1542-webfont.eot');
+    src: url('1542-webfont.eot?#iefix') format('embedded-opentype'),
+         url('1542-webfont.woff') format('woff'),
+         url('1542-webfont.ttf') format('truetype'),
+         url('1542-webfont.svg#bauhaus_md_btbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'avant_garde_booknormal';
+    src: url('avant_garde_book-webfont.eot');
+    src: url('avant_garde_book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('avant_garde_book-webfont.woff') format('woff'),
+         url('avant_garde_book-webfont.ttf') format('truetype'),
+         url('avant_garde_book-webfont.svg#avant_garde_booknormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MinotaurPhatte';
+    src: url('minotaur-webfont.eot');
+    src: url('minotaur-webfont.eot?#iefix') format('embedded-opentype'),
+         url('minotaur-webfont.woff') format('woff'),
+         url('minotaur-webfont.ttf') format('truetype'),
+         url('minotaur-webfont.svg#MinotaurPhatte') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* seems to be some issues with loading fonts (from font squirrel) Futura for example wont load on Opera */
+
+
+
+/* BODY BACKGROUNDS
+--------------------------------------------- */
+
+
+
+#bg{
+	position:fixed; 
+	top:0; 
+	left:0;
+	/* Preserve aspet ratio */
+	min-width:100%;
+	min-height:100%;
+	z-index: 1;
+}
+
+#bglinks{
+	position:fixed; 
+	top:0; 
+	left:0;
+	/* Preserve aspet ratio */
+	min-width:100%;
+	min-height:100%;
+	z-index: 1;
+	}
+	
+/* Background image for index & video page */
+
+body#about{
+	padding:0px;
+	border:0px;
+	margin:0px;
+	background-color:#0C81EE;
+	background-image: url(images/autobahn.gif);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 2em 6.25em;	
+}
+
+
+body#updates{
+	padding:0px;
+	border:0px;
+	margin:0px;
+	background-color: #f7b911;
+	background-image: url(images/computer.gif);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position:4.6875em 9.375em;
+}
+
+body#bio{
+	padding:0px;
+	border:0px;
+	margin:0px;
+	background-color: #df3d3b;
+	background-image: url(images/heads4.gif);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 2.5em 9.375em;
+	
+}
+
+body#music{
+	padding:0px;
+	border:0px;
+	margin:0px;
+	background-color: #050503;
+	background-image: url(images/speaker.gif);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 6em 9.375em;
+	
+}
+
+body#photo4 { 
+	background: url(images/lineup.gif) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* PHOTO4 of 4 is background image, the previous 3 are embedded in HMTL */
+
+
+#container{
+		width:100%;
+		}
+		
+/* full screen */
+
+
+
+
+
+/* HEADERS
+------------------------------------------- */	
+
+
+#index #header h1{
+	position:fixed;
+    top: 0.08em;
+	left:1em;
+	color:white;
+	font-family: futura, BebasNeueRegular, 'Century Gothic', Verdana, Helvetica, sans-serif;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	font-size: 4em;
+	text-decoration:none;
+	margin-bottom: 0em;
+	z-index:3;
+	}
+		
+#about #header h1 {
+	position:fixed;
+    top: .08em;
+	left:1em;
+	color:white;
+	font-family: futura, BebasNeueRegular, 'Century Gothic',  Verdana, Helvetica, sans-serif;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	font-size: 4em;
+	text-decoration:none;
+	margin-bottom: 0em;
+	z-index:3;
+
+	}
+
+		
+#music #header h1{
+	position:fixed;
+    top: 0.06em;
+	left:1em;
+	color:white;
+	font-family: futura, BebasNeueRegular, 'Century Gothic', Verdana, Helvetica, sans-serif;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	font-size: 4em;
+	text-decoration:none;
+	margin-bottom: 0em;
+	z-index:3;
+
+	}
+	
+#video #header h1{
+	position:fixed;
+    top: 0.06em;
+	left:1em;
+	color:white;
+	font-family: futura, BebasNeueRegular, 'Century Gothic', Verdana, Helvetica, sans-serif;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	font-size: 4em;
+	text-decoration:none;
+	margin-bottom: 0em;
+	z-index:3;
+	}	
+	
+	
+
+#updates #header h1{
+	position:fixed;
+    top: 0.06em;
+	left:1em;
+	color:white;
+	font-family: futura, BebasNeueRegular, 'Century Gothic', Verdana, Helvetica, sans-serif;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	font-size: 4em;
+	text-decoration:none;
+	margin-bottom: 0em;
+	z-index:3;
+	}
+
+		
+#bio #header h1{
+	position:fixed;
+    top: 0.06em;
+	left:1em;
+	color:white;
+	font-family: futura, BebasNeueRegular, 'Century Gothic', Verdana, Helvetica, sans-serif;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	font-size: 4em;
+	text-decoration:none;
+	margin-bottom: 0em;
+	z-index:2;
+	}
+	
+
+#links #header h1{
+	position:fixed;
+	width: 40%;
+    top: 0.06em;
+	left:1em;
+	color:white;
+	font-family: futura, BebasNeueRegular, 'Century Gothic', Verdana, Helvetica, sans-serif;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	font-size: 4em;
+	text-decoration:none;
+	margin-bottom: 0em;
+	z-index:3;
+	}
+
+#photos #header h1{
+	position:fixed;
+	width: 40%;
+    top: 0.06em;
+	left:1em;
+	color:white;
+	font-family:  futura, BebasNeueRegular, 'Century Gothic', Verdana, Helvetica, sans-serif;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	font-size: 4em;
+	text-decoration:none;
+	margin-bottom: 0em;
+	z-index:3;
+	}
+	
+/* extra header for more responsive final image (a background image) */
+	
+#photo4 #header h1{
+	position:fixed;
+	width: 40%;
+    top: 0.06em;
+	left:1em;
+	color:white;
+	font-family:  futura, BebasNeueRegular, 'Century Gothic', Verdana, Helvetica, sans-serif;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	font-size: 4em;
+	text-decoration:none;
+	margin-bottom: 0em;
+	z-index:3;
+	}
+	
+	
+
+
+/* NAVIGATION
+----------------------------------------------------------- */
+
+
+	
+.nav{
+	position: fixed;
+	top:0%;
+	padding-left:1.65em;
+	width: 100%;
+	padding-top:4.6875em;
+	z-index: 3;	
+
+}
+
+.nav ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	
+	}
+	
+.nav li{
+	float:left;
+	width: 7em;
+	text-align: center;
+	font-family: 'bauhaus Md BT', futura, 'century gothic', Verdana, Geneva, sans-serif;
+	color:white;
+	font-size:1em;
+	letter-spacing:0.1875em;
+	line-height: 1.25em;
+	text-transform: uppercase;
+	position:relative;
+	
+	}
+	
+.nav li ul{
+	visibility: hidden;
+	}
+	
+.nav li ul li{
+	float:none;
+	}	
+	
+.nav li a{
+	text-decoration:none;
+	color: white;
+	}
+	
+.nav li:hover{
+	text-decoration:underline;
+	}	
+	
+.nav li:active{
+	text-decoration:underline;
+	}	
+
+.nav li:visited{
+	text-decoration:underline;
+	}	
+
+	
+.nav li:hover ul{
+	visibility:visible;
+	}	
+	
+/* Navigation Video & Index page */		
+
+#navvideo{
+	position: fixed;
+	top:0%;
+	padding-left:1em;
+	width: 100%;
+	padding-top:4.6875em;
+	z-index: 3;	
+}
+	
+
+#navvideo ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+	
+#navvideo li{
+	float:left;
+	width: 7em;
+	text-align: center;
+	font-family: 'bauhaus Md BT', futura, 'century gothic', Verdana, Geneva, sans-serif;
+	color:black;
+	font-size:1em;
+	letter-spacing:0.1875em;
+	line-height: 1.25em;
+	text-transform: uppercase;
+	position:relative;
+	}
+	
+#navvideo li ul{
+	visibility: hidden;
+	}
+		
+#navvideo li ul li{
+	float:none;
+	
+}
+	
+#navvideo a{
+	text-decoration:none;
+	color: black;
+	}
+
+
+	
+#navvideo li:hover{
+	text-decoration: underline;
+	}
+	
+
+#navvideo li:hover ul{
+	visibility:visible;
+	}
+
+
+/* Sidebar
+------------------------------------------------------ */
+		
+#sidebar {
+	float: left;
+
+	}
+	
+	
+
+/* CONTENT
+----------------------------------------------------- */
+
+
+
+
+#about #content{
+		float: right;
+		width: 45%;
+		padding-right:5%;
+		padding-left:5%;
+		color: black;
+		font-family: 'Avant garde book', 'century gothic', verdana, helvetica, sans-serif;
+		font-size:1.2em;
+		line-height:1.5em;
+		margin-top:5.4em;
+		padding-bottom: 5%;
+		background:#0C81EE;
+	
+		}
+		
+#updates #content{
+		float: right;
+		width: 45%;
+		padding-right:5%;
+		padding-left:5%;
+		color: black;
+		font-family: 'Avant garde book', 'century gothic', verdana, helvetica, sans-serif;
+		font-size:1.2em;
+		line-height:1.5;
+		margin-top:5.4em;
+		padding-bottom: 5%;
+		background:#f7b911;
+		}
+		
+#bio #content{
+		position:relative;
+		float: right;
+		width: 45%;
+		padding-right:5%;
+		padding-left:5%;
+		color: black;
+		font-family: 'Avant garde book', 'century gothic', verdana, helvetica, sans-serif;
+		font-size:1.2em;
+		line-height:1.5;
+		margin-top:5.4em;
+		padding-bottom: 5%;
+		background:#df3d3b;
+		}
+		
+#music #content{
+		float: right;
+		width: 45%;
+		padding-right:5%;
+		padding-left:5%;
+		color: white;
+		font-family: 'Avant garde book', 'century gothic', verdana, helvetica, sans-serif;
+		font-size:1.2em;
+		line-height:1.5em;
+		margin-top:5.4em;
+		padding-bottom: 5%;
+		background:#050503;
+	
+		}
+
+#video #videocontent{
+	position: relative;
+	float: right;
+	width:45%;
+	padding-right:5%;
+	padding-left:5%;
+	color:white;
+ 	font-family: 'Avant garde book', 'century gothic', verdana, helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	line-height: 1.5;
+	margin-top:5.4em;
+	margin-bottom: 25%;
+	z-index:2;
+		}
+	
+#video #videocontent .videoplayer{
+	margin-top:1.2em;
+		/* Adds slight shadow around player*/
+-webkit-box-shadow: 0px 0px 10px 0px black;
+-moz-box-shadow: 0px 0px 10px 0px black;
+box-shadow: 0px 0px 10px 0px black;
+}	
+				
+#links #content ul{
+	list-style-type:none;
+	padding:0;
+	position: relative;
+	float: right;
+	width:35%;
+	margin-top:5.4em;
+	margin-right:10%;
+	padding-right:1em;
+	padding-left:1em;
+ 	font-family: 'Avant garde book', 'century gothic', verdana, helvetica, sans-serif;
+ 	font-size:1.2em;
+ 	line-height:1.5;
+ 	color:white;
+ 	/* Adds the transparent background */
+background-color: rgba(1, 1, 1, 0.7);
+color: rgba(1, 1, 1, 0.7);
+	text-decoration:none;
+	margin-bottom: 5%;
+	z-index:2;
+		}
+
+		
+
+#links #content a:link{
+ 	color:white;
+ 	font-size:1.2em;
+	text-decoration:none;
+	z-index:2;
+		}
+
+
+#links #content a:hover{
+ 	color:white;
+	text-decoration:underline;
+	z-index:2;
+		}
+
+
+#links #content a:active{
+ 	color:white;
+	text-decoration:none;
+	z-index:2;
+		}	
+
+
+#links #content a:visited{
+ 	color:white;
+	z-index:2;
+		}
+
+		
+		
+		
+/* FOOTER on bio page
+
+----------------------------------------------------------------- */	
+		
+#footer{
+	clear:both;
+	margin-left: 60%;
+	padding-top: 5%;
+	z-index:2;
+	}
+
+
+
+
+/* MEDIA QUERIES
+------------------------------------------------------------------- */
+		
+
+@media screen and (max-width: 1088px){
+
+
+body#bio{
+	background-attachment: scroll;
+	-webkit-background-attachment:scroll;
+	}
+
+
+#bio #content {
+	margin: auto;
+	clear:both;
+	margin-top:640px;
+	margin-bottom:20px;
+	width: 90%;
+	height:50%;
+	font-size:1em;
+	
+	}
+	
+#bio #header h1{
+	background: #df3d3b;
+	width:1000px;
+	top:0;
+	left:0;
+	padding-top:5px;
+	padding-left:64px;
+	}
+
+body#about{
+background-attachment: scroll;
+}
+
+#about #content {
+	margin: auto;
+	clear:both;
+	margin-top:840px;
+	margin-bottom:20px;
+	width: 90%;
+	height:50%;
+	font-size:1em;
+	
+	}
+	
+#about #header h1{
+	background: #0C81EE;
+	width:1000px;
+	top:0;
+	left:0;
+	padding-top:5px;
+	padding-left:64px;
+	}
+	
+body#updates{
+background-attachment: scroll;
+}
+
+#updates #content {
+	margin: auto;
+	clear:both;
+	margin-top:640px;
+	margin-bottom:20px;
+	width: 90%;
+	height:50%;
+	font-size:1em;
+	
+	}
+	
+#updates #header h1{
+	background: #f7b911;
+	width:1000px;
+	top:0;
+	left:0;
+	padding-top:5px;
+	padding-left:64px;
+	}
+	
+	
+body#music{
+background-attachment: scroll;
+}
+
+#music #content {
+	margin: auto;
+	clear:both;
+	margin-top:640px;
+	margin-bottom:20px;
+	width: 90%;
+	height:50%;
+	font-size:1em;
+	
+	}
+	
+#music #header h1{
+	background: #050503;
+	width:1000px;
+	top:0;
+	left:0;
+	padding-top:5px;
+	padding-left:64px;
+	}
+	
+
+#video #videocontent{
+	float: left;
+	padding-left:20%;
+	font-size:1em;
+	margin-top:100px;
+		}
+
+		
+#links #content ul{
+	width:85%;
+	top:50px;
+	font-size: 12px;
+		}	
+	
+}
+
+
+		
+/* MOBILE MEDIA QUERIES
+----------------------------------------------------------------- */
+	
+	
+@media screen and (max-width: 480px){
+
+body#bio{
+	background-image:url(images/heads4small.gif);
+	background-attachment: scroll;
+	background-position: 20px 70px;
+	}
+
+#bio #header h1{
+	font-size: 2.35em;
+	left:-1.20em;
+
+	}
+		
+#bio .nav li{
+	font-family: futura, helvetica, sans-serif;
+	font-size:.5em;
+	left:-1em;
+	top:-3em;
+	letter-spacing:0.1em;
+	}
+
+#bio .nav li ul{
+	font-size:1em;
+	}
+
+#bio #content {
+	margin: auto;
+	clear:both;
+	margin-top:250px;
+	width: 90%;
+	height:50%;
+	font-size:1em;
+	
+	}
+	
+body#about{
+	background-image:url(images/autobahnsmall.gif);
+	background-attachment: scroll;
+	background-position: 2px 70px;
+	}
+	
+#about #header h1{
+	font-size: 2.35em;
+	left:-1.1em;
+
+	}
+		
+#about .nav li{
+	font-family: futura, helvetica, sans-serif;
+	font-size:.5em;
+	left:-15px;
+	top:-3em;
+	letter-spacing:0.1em;
+	}
+
+#about .nav li ul{
+	font-size:1em;
+	}
+
+#about #content {
+	margin: auto;
+	clear:both;
+	margin-top:550px;
+	width: 90%;
+	height:50%;
+	font-size:1em;
+	
+	}
+	
+body#updates{
+	background-image:url(images/computersmall.gif);
+	background-attachment: scroll;
+	background-position: 20px 70px;
+	}
+	
+#updates #header h1{
+	font-size: 2.35em;
+	left:-1.20em;
+
+	}
+		
+#updates .nav li{
+	font-family: futura, helvetica, sans-serif;
+	font-size:.5em;
+	left:-1em;
+	top:-3em;
+	letter-spacing:0.1em;
+	}
+
+#updates .nav li ul{
+	font-size:1em;
+	}
+
+#updates #content {
+	margin: auto;
+	clear:both;
+	margin-top:250px;
+	width: 90%;
+	height:50%;
+	font-size:1em;
+	
+	}
+	
+body#music{
+	background-image:url(images/speakersmall.gif);
+	background-attachment: scroll;
+	background-position: 70px 70px;
+	}
+	
+#music #header h1{
+	font-size: 2.30em;
+	left:-1.20em;
+
+	}
+		
+#music .nav li{
+	font-family: futura, helvetica, sans-serif;
+	font-size:.5em;
+	left:-1em;
+	top:-3em;
+	letter-spacing:0.1em;
+	}
+
+#music .nav li ul{
+	font-size:1em;
+	}
+
+#music #content {
+	margin: auto;
+	clear:both;
+	margin-top:250px;
+	width: 90%;
+	height:50%;
+	font-size:1em;
+	}
+	
+#video #videocontent{
+	float: left;
+	padding-left:0%;
+		}
+		
+		
+#video #header h1{
+	font-size: 2.30em;
+	left:.40em;
+
+	}
+		
+#navvideo li{
+	font-family: futura, helvetica, sans-serif;
+	font-size:.5em;
+	left:-1em;
+	top:-3em;
+	letter-spacing:0.1em;
+	}
+
+#navvideo li ul{
+	font-size:1em;
+	}
+	
+#index #header h1{
+	font-size: 2.30em;
+	left:.40em;
+}
+
+#links #header h1{
+	font-size: 2.30em;
+	left:.40em;
+	}
+	
+#links .nav li{
+	font-family: futura, helvetica,sans-serif;
+	font-size:.5em;
+	left:-1em;
+	top:-3em;
+	letter-spacing:0.1em;
+	}
+
+#links #content ul{
+	top:20px;
+		}	
+		
+		
+		
+		
+#photos #header h1{
+	font-size: 2.35em;
+	left:.5em;
+
+	}
+		
+#photos .nav li{
+	font-family: futura, helvetica, sans-serif;
+	font-size:.5em;
+	left:-1em;
+	top:-3em;
+	letter-spacing:0.1em;
+	}
+
+#photos .nav li ul{
+	font-size:1em;
+	}
+
+		
+#photo4 #header h1{
+	font-size: 2.35em;
+	left:.5em;
+
+	}
+		
+#photo4 .nav li{
+	font-family: futura, helvetica, sans-serif;
+	font-size:.5em;
+	left:-1em;
+	top:-3em;
+	letter-spacing:0.1em;
+	}
+
+#photo4 .nav li ul{
+	font-size:1em;
+	}
+	
+}
