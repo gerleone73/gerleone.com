@@ -118,11 +118,11 @@ body {
   top: 17px;
   right: 10px;
   display: inline-block;
-  font-family: 'Stint Ultra Expanded', cursive;
-  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   font-size: 1.5em;
   line-height: 1;
-  color: #fff;
+  color: rgba(50,50,50,1);
   text-decoration: none;
   vertical-align: top;
   z-index: 2000;
@@ -132,21 +132,23 @@ body {
 }
 .slideout-menu ul {
   list-style: none;
-  font-family: 'Stint Ultra Expanded', cursive;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.05em;
   font-weight: 300;
   font-size: .75em;
   line-height: 2em;
   margin-top:2em;
   border-top: 1px solid #999; 
+
 }
 .slideout-menu ul li {
   border-bottom: 1px solid #999;
+  
 }
 .slideout-menu ul li a {
   position: relative;
   display: block;
-  padding: 10px;
+  padding: 10px 0 10px 20px;
   color: #fff;
   text-decoration: none;
 }
@@ -171,7 +173,7 @@ body {
 /*---HAMBURGER----------------------------------*/
 
 .hamburger {
-    background: rgba(50,50,50,1);
+    background: rgba(50,50,50,.8);
     z-index: 1000;
     font-size:1.5em;
     text-align: left;
@@ -215,20 +217,23 @@ body {
     left: 50%;
      -webkit-transform: translateX(-50%);
     transform: translateX(-50%);    top:75%;
-    font-family: 'Gentium Basic', serif;
-
-  top:5%;
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: 600;
+font-weight: 300;
   letter-spacing: 0.05em;
+  font-family: 'Open Sans', sans-serif;
+
+  top:10%;
+
+  font-size: .75em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  
  
   z-index:1000;
-  color:#c5c5c5;;
+  color:#c5c5c5;
   width:13em;
-  line-height: 3em;
+  line-height: 2.75em;
   text-align: center;
-   border: 1px solid #c5c5c5;
+   border-bottom: 1px solid #c5c5c5;
    
 }
 
@@ -236,7 +241,7 @@ body {
 
   cursor: pointer;
   color: white;
-   border: 1px solid white;
+   border-bottom: 1px solid white;
 }
 
 /* Me & TWITTER ICONS---------------*/
@@ -353,13 +358,12 @@ body {
     left: 50%;
      -webkit-transform: translateX(-50%);
     transform: translateX(-50%);    
-    font-family: 'Gentium Basic', serif;
+   
 
-  top:72%;
-
-
+  top:70%;
+  font-weight: 300;
   letter-spacing: 0.05em;
-  font-family: 'Stint Ultra Expanded', cursive;
+  font-family: 'Open Sans', sans-serif;
   font-size:2.5em;
 }
 
@@ -374,10 +378,10 @@ body {
      -webkit-transform: translateX(-50%);
     transform: translateX(-50%); 
     top:75%;
-    font-family: 'Gentium Basic', serif;
-    font-weight: bold;
+  font-family: 'Vollkorn', serif;
+    font-weight: 300;
   font-size: 12em;
-    letter-spacing: .02em;
+    letter-spacing: 0em;
     text-transform: uppercase;
 }
 
@@ -425,10 +429,10 @@ body {
   top:1.5em;
   left: 8em;
   font-size:1.25em;
-  font-weight: 600;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-family: 'Stint Ultra Expanded', cursive;
+  font-family: 'Vollkorn', serif;
   color:white;
 
 }
@@ -475,7 +479,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d2d2d2', e
 
 .section > h2{
   padding-top:1.5em;
- font-family: 'Stint Ultra Expanded', cursive;
+ font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.1em;
   font-size: 2em;
   margin-bottom: 1em;
@@ -519,7 +523,7 @@ dt{
   background: #e3e3e3;
     border-bottom: 1px solid #c5c5c5;
     border-top: 1px solid white;
-  font-family: 'Stint Ultra Expanded', cursive;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.05em;
   font-size: 1.25em;
   line-height: 1.5em;
